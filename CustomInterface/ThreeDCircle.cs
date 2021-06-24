@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CustomInterface
 {
-    class ThreeDCircle:Circle
+    class ThreeDCircle:Circle,IDraw3D
     {
         //new keyword to hide the base property 'PetName' a bove me
         //public new string  PetName { get; set; }
@@ -22,6 +22,11 @@ namespace CustomInterface
             :base(name)
         {
             PetName = name;
+        }
+        //IDraw3D  implementation
+        public void Draw3D()
+        {
+            Console.WriteLine("Drawing 3D Circle");
         }
     }
 }

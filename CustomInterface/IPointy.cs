@@ -16,7 +16,7 @@ namespace CustomInterface
 
             byte Points { get; }
         //Implicitly public and abstract 
-        byte GetNumberOfPoint();
+        //byte GetNumberOfPoint();
 
     }
 }
